@@ -4,9 +4,12 @@ import 'package:portfolio/features/main/main_screen.dart';
 import 'package:portfolio/provider/app_provider.dart';
 import 'package:portfolio/provider/drawer_provider.dart';
 import 'package:portfolio/provider/scroll_provider.dart';
+import 'package:url_strategy/url_strategy.dart';
 import 'package:provider/provider.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  setPathUrlStrategy();
   runApp(const MyApp());
 }
 
