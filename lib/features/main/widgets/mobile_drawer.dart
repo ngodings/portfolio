@@ -73,7 +73,7 @@ class MobileDrawer extends StatelessWidget {
                   onPressed: () => openURL(StaticUtils.resume),
                   hoverColor: AppTheme.c!.primary!.withAlpha(150),
                   shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(5.0),
+                    borderRadius: BorderRadius.circular(16.0),
                     side: BorderSide(color: AppTheme.c!.primary!),
                   ),
                   child: const ListTile(
