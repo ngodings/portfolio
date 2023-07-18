@@ -15,7 +15,7 @@ class ScrollProvider extends ChangeNotifier {
                 ? 250
                 : 245;
     controller.animateTo(AppDimensions.normalize(offset * index.toDouble()),
-        duration: const Duration(seconds: 1), curve: Curves.bounceInOut);
+        duration: const Duration(seconds: 1), curve: Curves.easeIn);
   }
 
   scrollMobile(int index) {
