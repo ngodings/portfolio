@@ -11,9 +11,15 @@ import '../configs/typography/app_text.dart';
 import '../provider/app_provider.dart';
 
 class ProjectCardWidget extends HookWidget {
-  const ProjectCardWidget(this.banner, this.projectLink, this.projectIcon,
-      this.projectTitle, this.projectDescription, this.projectIconData,
-      {super.key});
+  const ProjectCardWidget({
+    Key? key,
+    this.banner,
+    this.projectIcon,
+    this.projectLink,
+    this.projectIconData,
+    required this.projectTitle,
+    required this.projectDescription,
+  }) : super(key: key);
   final String? banner;
   final String? projectLink;
   final String? projectIcon;
