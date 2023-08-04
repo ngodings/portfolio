@@ -25,8 +25,8 @@ class _AnimatorState extends State<Animator>
   void initState() {
     super.initState();
     animationController = AnimationController(vsync: this);
-    animation = CurvedAnimation(
-        parent: animationController!, curve: Curves.easeInOutCubic);
+    animation =
+        CurvedAnimation(parent: animationController!, curve: Curves.easeInOut);
     timer = Timer(widget.time!, animationController!.forward);
   }
 

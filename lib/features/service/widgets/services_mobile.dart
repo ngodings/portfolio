@@ -1,36 +1,40 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
-import 'package:portfolio/widgets/project_card_widget.dart';
+import 'package:portfolio/widgets/service_card.dart';
 
-import '../../../configs/app_dimensions.dart';
-import '../../../utils/contact_utils.dart';
+import '../../../configs/ui/space.dart';
+import '../../../utils/service_utils.dart';
 import '../../../widgets/custom_text_heading.dart';
 
-class ContactMobileScreen extends StatelessWidget {
-  const ContactMobileScreen({super.key});
+class ServiceMobile extends StatelessWidget {
+  const ServiceMobile({super.key});
 
   @override
   Widget build(BuildContext context) {
+    double height = MediaQuery.of(context).size.height;
+    double width = MediaQuery.of(context).size.width;
     return Column(
       children: [
         const CustomSectionHeading(
-          text: "\nGet in Touch",
+          text: '\nWhat I can do?',
         ),
         const CustomSectionSubHeading(
-          text: "Let's build something together :)\n\n",
+          text: 'I may not be perfect but surely I\'m of some use :)\n\n',
         ),
+        Space.y!,
         CarouselSlider.builder(
-          itemCount: 3,
+          itemCount: ServicesUtils.servicesTitles.length,
           itemBuilder: (BuildContext context, int itemIndex, int i) => Padding(
             padding: const EdgeInsets.symmetric(vertical: 10.0),
-            child: ProjectCardWidget(
-              projectIconData: ContactUtils.contactIcon[i],
-              projectTitle: ContactUtils.titles[i],
-              projectDescription: ContactUtils.details[i],
+            child: ServiceCardWidget(
+              serviceIcon: ServicesUtils.servicesIcons[i],
+              serviceTitle: ServicesUtils.servicesTitles[i],
+              serviceDescription: ServicesUtils.servicesDescription[i],
             ),
           ),
           options: CarouselOptions(
-            height: AppDimensions.normalize(50),
+            viewportFraction: 0.65,
+            height: width < 450 ? height * 0.4 : height * 0.4,
             autoPlay: true,
             autoPlayInterval: const Duration(seconds: 5),
             enlargeCenterPage: true,
@@ -38,7 +42,7 @@ class ContactMobileScreen extends StatelessWidget {
             autoPlayAnimationDuration: const Duration(milliseconds: 800),
             enableInfiniteScroll: false,
           ),
-        ),
+        )
       ],
     );
   }

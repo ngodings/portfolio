@@ -27,6 +27,6 @@ class ScrollProvider extends ChangeNotifier {
                 ? 300
                 : 310;
     controller.animateTo(AppDimensions.normalize(offset * index.toDouble()),
-        duration: const Duration(seconds: 1), curve: Curves.bounceInOut);
+        duration: const Duration(seconds: 1), curve: Curves.easeIn);
   }
 }

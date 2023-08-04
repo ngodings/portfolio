@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:portfolio/configs/ui/space.dart';
 import 'package:portfolio/utils/const.dart';
 import 'package:provider/provider.dart';
@@ -19,6 +18,8 @@ class ProjectCardWidget extends HookWidget {
     this.projectIconData,
     required this.projectTitle,
     required this.projectDescription,
+    this.widthSize,
+    this.heightSize,
   }) : super(key: key);
   final String? banner;
   final String? projectLink;
@@ -26,6 +27,8 @@ class ProjectCardWidget extends HookWidget {
   final String projectTitle;
   final String projectDescription;
   final IconData? projectIconData;
+  final double? widthSize;
+  final double? heightSize;
 
   @override
   Widget build(BuildContext context) {
@@ -50,11 +53,11 @@ class ProjectCardWidget extends HookWidget {
       child: Container(
         margin: Space.h,
         padding: Space.all(),
-        width: AppDimensions.normalize(150),
-        height: AppDimensions.normalize(90),
+        width: widthSize ?? AppDimensions.normalize(150),
+        height: heightSize ?? AppDimensions.normalize(90),
         decoration: BoxDecoration(
           color: appProvider.isDark ? Colors.grey : Colors.white,
-          borderRadius: BorderRadius.circular(16.w),
+          borderRadius: BorderRadius.circular(16),
           boxShadow: appProvider.isDark
               ? [
                   BoxShadow(
