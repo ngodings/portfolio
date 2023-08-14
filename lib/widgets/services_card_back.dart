@@ -1,13 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:provider/provider.dart';
 
-import '../configs/app_dimensions.dart';
-import '../configs/theme/app_theme.dart';
 import '../configs/typography/app_text.dart';
-import '../configs/ui/space.dart';
 import '../provider/app_provider.dart';
-import '../utils/const.dart';
 
 class ServiceCardBackWidget extends StatelessWidget {
   const ServiceCardBackWidget(
@@ -25,92 +20,93 @@ class ServiceCardBackWidget extends StatelessWidget {
       children: [
         Text(
           serviceDesc,
+          textAlign: TextAlign.center,
           style: AppText.l1,
         ),
-        Divider(
-          color: appProvider.isDark ? Colors.white : Colors.black38,
-        ),
-        SizedBox(
-          height: AppDimensions.normalize(14),
-          width: AppDimensions.normalize(60),
-          child: MaterialButton(
-            color: AppTheme.c!.primary,
-            onPressed: () => showDialog(
-                context: context,
-                builder: (contecxt) => AlertDialog(
-                      title: Text(
-                        "Hire Me!",
-                        style: AppText.b2b,
-                      ),
-                      actions: [
-                        TextButton(
-                          onPressed: () => Navigator.pop(context),
-                          child: const Text("Back"),
-                        )
-                      ],
-                      content: Column(
-                        mainAxisSize: MainAxisSize.min,
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          MaterialButton(
-                            height: 40.0,
-                            onPressed: () => openURL(
-                              'https://api.whatsapp.com/send?phone=6287779668268',
-                            ),
-                            color: const Color(0xff34CB62),
-                            child: Row(
-                              mainAxisSize: MainAxisSize.min,
-                              children: [
-                                const Icon(
-                                  FontAwesomeIcons.whatsapp,
-                                  color: Colors.white,
-                                ),
-                                Space.x!,
-                                Text(
-                                  'WhatsApp',
-                                  style: AppText.l1!.copyWith(
-                                    color: Colors.white,
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                          Space.y1!,
-                          MaterialButton(
-                            height: 40.0,
-                            onPressed: () => openURL(
-                              '',
-                            ),
-                            color: const Color(0xff13A800),
-                            child: Row(
-                              mainAxisSize: MainAxisSize.min,
-                              children: [
-                                Image.network(
-                                  'https://img.icons8.com/ios-filled/50/000000/upwork.png',
-                                  height: 35.0,
-                                  color: Colors.white,
-                                ),
-                                Space.x!,
-                                Text(
-                                  'Upwork',
-                                  style: AppText.l1!.copyWith(
-                                    color: Colors.white,
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ],
-                      ),
-                    )),
-            child: Text(
-              'HIRE ME!',
-              style: AppText.b2!.copyWith(
-                color: Colors.white,
-              ),
-            ),
-          ),
-        )
+        // Divider(
+        //   color: appProvider.isDark ? Colors.white : Colors.black38,
+        // ),
+        // SizedBox(
+        //   height: AppDimensions.normalize(14),
+        //   width: AppDimensions.normalize(60),
+        //   child: MaterialButton(
+        //     color: AppTheme.c!.primary,
+        //     onPressed: () => showDialog(
+        //         context: context,
+        //         builder: (contecxt) => AlertDialog(
+        //               title: Text(
+        //                 "Hire Me!",
+        //                 style: AppText.b2b,
+        //               ),
+        //               actions: [
+        //                 TextButton(
+        //                   onPressed: () => Navigator.pop(context),
+        //                   child: const Text("Back"),
+        //                 )
+        //               ],
+        //               content: Column(
+        //                 mainAxisSize: MainAxisSize.min,
+        //                 mainAxisAlignment: MainAxisAlignment.center,
+        //                 children: [
+        //                   MaterialButton(
+        //                     height: 40.0,
+        //                     onPressed: () => openURL(
+        //                       'https://api.whatsapp.com/send?phone=6287779668268',
+        //                     ),
+        //                     color: const Color(0xff34CB62),
+        //                     child: Row(
+        //                       mainAxisSize: MainAxisSize.min,
+        //                       children: [
+        //                         const Icon(
+        //                           FontAwesomeIcons.whatsapp,
+        //                           color: Colors.white,
+        //                         ),
+        //                         Space.x!,
+        //                         Text(
+        //                           'WhatsApp',
+        //                           style: AppText.l1!.copyWith(
+        //                             color: Colors.white,
+        //                           ),
+        //                         ),
+        //                       ],
+        //                     ),
+        //                   ),
+        //                   Space.y1!,
+        //                   MaterialButton(
+        //                     height: 40.0,
+        //                     onPressed: () => openURL(
+        //                       '',
+        //                     ),
+        //                     color: const Color(0xff13A800),
+        //                     child: Row(
+        //                       mainAxisSize: MainAxisSize.min,
+        //                       children: [
+        //                         Image.network(
+        //                           'https://img.icons8.com/ios-filled/50/000000/upwork.png',
+        //                           height: 35.0,
+        //                           color: Colors.white,
+        //                         ),
+        //                         Space.x!,
+        //                         Text(
+        //                           'Upwork',
+        //                           style: AppText.l1!.copyWith(
+        //                             color: Colors.white,
+        //                           ),
+        //                         ),
+        //                       ],
+        //                     ),
+        //                   ),
+        //                 ],
+        //               ),
+        //             )),
+        //     child: Text(
+        //       'HIRE ME!',
+        //       style: AppText.b2!.copyWith(
+        //         color: Colors.white,
+        //       ),
+        //     ),
+        //   ),
+        // )
       ],
     );
   }

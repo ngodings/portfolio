@@ -13,7 +13,7 @@ class BodyUtils {
     AboutScreen(),
     ServiceScreen(),
     PortfolioScreen(),
-    ContactScreen(),
+    // ContactScreen(),
     Footer(),
   ];
 }

@@ -6,7 +6,7 @@ class NavBarUtils {
     'ABOUT',
     'SERVICES',
     'PROJECTS',
-    'CONTACT ME',
+    // 'CONTACT ME',
   ];
 
   static const List<IconData> icons = [
@@ -14,6 +14,6 @@ class NavBarUtils {
     Icons.person,
     Icons.work,
     Icons.settings,
-    Icons.contact_page,
+    //  Icons.contact_page,
   ];
 }

@@ -8,6 +8,7 @@ import '../configs/app_dimensions.dart';
 import '../configs/theme/app_theme.dart';
 import '../configs/typography/app_text.dart';
 import '../provider/app_provider.dart';
+import '../utils/utils.dart';
 
 class ProjectCardWidget extends HookWidget {
   const ProjectCardWidget({
@@ -56,20 +57,20 @@ class ProjectCardWidget extends HookWidget {
         width: widthSize ?? AppDimensions.normalize(150),
         height: heightSize ?? AppDimensions.normalize(90),
         decoration: BoxDecoration(
-          color: appProvider.isDark ? Colors.grey : Colors.white,
+          color: appProvider.isDark ? Color(0xFF051113) : Colors.white,
           borderRadius: BorderRadius.circular(16),
           boxShadow: appProvider.isDark
               ? [
                   BoxShadow(
-                    color: AppTheme.c!.primary!.withAlpha(100),
-                    blurRadius: 12.0,
+                    color: AppTheme.c!.primary!.withAlpha(0),
+                    blurRadius: 0.0,
                     offset: const Offset(0.0, 0.0),
                   )
                 ]
               : [
                   BoxShadow(
                     color: Colors.black.withAlpha(100),
-                    blurRadius: 12.0,
+                    blurRadius: 6.0,
                     offset: const Offset(0.0, 0.0),
                   )
                 ],

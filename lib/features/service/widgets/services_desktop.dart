@@ -22,7 +22,7 @@ class ServiceDesktop extends StatelessWidget {
             text: '\nWhat I can do?',
           ),
           const CustomSectionSubHeading(
-            text: 'I may not be perfect but surely I\'m of some use :)\n\n',
+            text: 'I\'m imperfect, yet purposeful.\n\n',
           ),
           Space.y!,
           Wrap(

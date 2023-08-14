@@ -52,7 +52,11 @@ class ServiceCardWidget extends HookWidget {
             padding:
                 const EdgeInsets.symmetric(vertical: 8.0, horizontal: 12.0),
             decoration: BoxDecoration(
-              color: appProvider.isDark ? Colors.grey[900] : Colors.white,
+              image: const DecorationImage(
+                image: AssetImage(StaticUtils.sparkgif),
+                fit: BoxFit.cover,
+              ),
+              color: appProvider.isDark ? Color(0xFF051113) : Colors.white,
               borderRadius: BorderRadius.circular(15),
               boxShadow: isHover.value
                   ? [

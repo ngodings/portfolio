@@ -82,6 +82,7 @@ flutter:
     - assets/
     - assets/works/
     - assets/images/
+    - assets/gifs/
     - assets/services/
     - assets/projects/
     - assets/data/data.json

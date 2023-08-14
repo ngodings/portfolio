@@ -1,5 +1,6 @@
 class StaticUtils {
-  static const String hi = 'assets/hi.gif';
+  static const String hi = 'assets/gifs/stars.gif';
+  static const String sparkgif = 'assets/gifs/sparks.gif';
 
   // photos
   static const String mobilePhoto = 'assets/images/profile.png';
@@ -21,12 +22,14 @@ class StaticUtils {
   static const String openSourceBlack = 'assets/services/open_b.png';
 
   static const List<String> socialIconURL = [
-    "https://img.icons8.com/ios-glyphs/480/ffffff/instagram-new.png",
     "https://img.icons8.com/metro/308/ffffff/linkedin.png",
     "https://img.icons8.com/material-rounded/384/ffffff/github.png",
   ];
 
-  static const List<String> socialLinks = [];
+  static const List<String> socialLinks = [
+    "www.linkedin.com/in/rikeaqila",
+    "https://github.com/ngodings/"
+  ];
 
   static const String resume = '';
 
