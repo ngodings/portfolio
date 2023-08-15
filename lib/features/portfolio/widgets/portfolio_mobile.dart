@@ -22,7 +22,7 @@ class PortfolioMobile extends StatelessWidget {
           text: "\nPortfolio",
         ),
         const CustomSectionSubHeading(
-          text: "Here are few samples of my previous work :)\n\n",
+          text: "Here are glimpses of my past accomplishments.\n\n",
         ),
         CarouselSlider.builder(
           itemCount: ProjectUtils.titles.length,

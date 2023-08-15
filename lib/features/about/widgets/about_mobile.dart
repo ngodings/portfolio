@@ -98,11 +98,11 @@ class AboutMobile extends StatelessWidget {
           ),
           const AboutMeWidget(
             data: "Name",
-            information: "",
+            information: "Rike Aqila Nurfi",
           ),
           const AboutMeWidget(
             data: "Email",
-            information: "",
+            information: "rikeaql@gmail.com",
           ),
           Space.y!,
           OutlinedButton(
@@ -112,21 +112,21 @@ class AboutMobile extends StatelessWidget {
                     ? html.window.open(StaticUtils.resume, "pdf")
                     : openURL(StaticUtils.resume);
               }),
-          Space.y!,
-          Wrap(
-              alignment: WrapAlignment.center,
-              crossAxisAlignment: WrapCrossAlignment.center,
-              children: WorkUtils.logos
-                  .asMap()
-                  .entries
-                  .map(
-                    (e) => CommunityIconButton(
-                      icon: e.value,
-                      link: WorkUtils.communityLinks[e.key],
-                      height: WorkUtils.communityLogoHeight[e.key],
-                    ),
-                  )
-                  .toList()),
+          // Space.y!,
+          // Wrap(
+          //     alignment: WrapAlignment.center,
+          //     crossAxisAlignment: WrapCrossAlignment.center,
+          //     children: WorkUtils.logos
+          //         .asMap()
+          //         .entries
+          //         .map(
+          //           (e) => CommunityIconButton(
+          //             icon: e.value,
+          //             link: WorkUtils.communityLinks[e.key],
+          //             height: WorkUtils.communityLogoHeight[e.key],
+          //           ),
+          //         )
+          //         .toList()),
         ],
       ),
     );

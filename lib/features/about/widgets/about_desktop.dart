@@ -96,7 +96,7 @@ class AboutDesktop extends StatelessWidget {
                             children: [
                               AboutMeWidget(
                                 data: "Name",
-                                information: "Lala",
+                                information: "Rike Aqila Nurfi",
                               ),
                               AboutMeWidget(
                                 data: "Age",
@@ -133,22 +133,22 @@ class AboutDesktop extends StatelessWidget {
                                   "Resume",
                                 )),
                           ),
-                          Space.x1!,
-                          Container(
-                            color: Colors.grey[900],
-                            width: AppDimensions.normalize(30),
-                            height: AppDimensions.normalize(0.5),
-                          ),
-                          ...WorkUtils.logos.asMap().entries.map(
-                                (e) => Expanded(
-                                  child: CommunityIconButton(
-                                    icon: e.value,
-                                    link: WorkUtils.communityLinks[e.key],
-                                    height:
-                                        WorkUtils.communityLogoHeight[e.key],
-                                  ),
-                                ),
-                              )
+                          // Space.x1!,
+                          // Container(
+                          //   color: Colors.grey[900],
+                          //   width: AppDimensions.normalize(30),
+                          //   height: AppDimensions.normalize(0.5),
+                          // ),
+                          // ...WorkUtils.logos.asMap().entries.map(
+                          //       (e) => Expanded(
+                          //         child: CommunityIconButton(
+                          //           icon: e.value,
+                          //           link: WorkUtils.communityLinks[e.key],
+                          //           height:
+                          //               WorkUtils.communityLogoHeight[e.key],
+                          //         ),
+                          //       ),
+                          //     )
                         ],
                       )
                     ],

@@ -101,7 +101,7 @@ class AboutTablet extends StatelessWidget {
                 children: [
                   AboutMeWidget(
                     data: "Name",
-                    information: "",
+                    information: "Rike Aqila Nurfi",
                   ),
                   AboutMeWidget(
                     data: "Age",
@@ -117,11 +117,11 @@ class AboutTablet extends StatelessWidget {
                 children: [
                   AboutMeWidget(
                     data: "Email",
-                    information: "",
+                    information: "rikeaql@gmail.com",
                   ),
                   AboutMeWidget(
                     data: "From",
-                    information: "Attock, PK",
+                    information: "Boyolali",
                   ),
                 ],
               ),
@@ -140,33 +140,33 @@ class AboutTablet extends StatelessWidget {
                   ),
                 ),
               ),
-              Space.x!,
-              Container(
-                width: width * 0.05,
-                decoration: BoxDecoration(
-                  border: Border(
-                    bottom: BorderSide(
-                      color: Colors.grey[900]!,
-                      width: 2.0,
-                    ),
-                  ),
-                ),
-              ),
-              SingleChildScrollView(
-                scrollDirection: Axis.horizontal,
-                child: Row(
-                    children: WorkUtils.logos
-                        .asMap()
-                        .entries
-                        .map(
-                          (e) => CommunityIconButton(
-                            icon: e.value,
-                            link: WorkUtils.communityLinks[e.key],
-                            height: WorkUtils.communityLogoHeight[e.key],
-                          ),
-                        )
-                        .toList()),
-              ),
+              // Space.x!,
+              // Container(
+              //   width: width * 0.05,
+              //   decoration: BoxDecoration(
+              //     border: Border(
+              //       bottom: BorderSide(
+              //         color: Colors.grey[900]!,
+              //         width: 2.0,
+              //       ),
+              //     ),
+              //   ),
+              // ),
+              // SingleChildScrollView(
+              //   scrollDirection: Axis.horizontal,
+              //   child: Row(
+              //       children: WorkUtils.logos
+              //           .asMap()
+              //           .entries
+              //           .map(
+              //             (e) => CommunityIconButton(
+              //               icon: e.value,
+              //               link: WorkUtils.communityLinks[e.key],
+              //               height: WorkUtils.communityLogoHeight[e.key],
+              //             ),
+              //           )
+              //           .toList()),
+              // ),
             ],
           )
         ],

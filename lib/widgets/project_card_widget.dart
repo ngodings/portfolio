@@ -126,9 +126,6 @@ class ProjectCardWidget extends HookWidget {
                 SizedBox(
                   height: height * 0.01,
                 ),
-                SizedBox(
-                  height: height * 0.01,
-                ),
                 Text(
                   projectDescription,
                   textAlign: TextAlign.center,
@@ -144,9 +141,11 @@ class ProjectCardWidget extends HookWidget {
               child: FittedBox(
                 fit: BoxFit.fill,
                 child: banner != null
-                    ? Image.asset(
-                        banner!,
-                      )
+                    ? Container()
+                    // Image.asset(
+                    //     banner!,
+                    //     fit: BoxFit.fill,
+                    //   )
                     : Container(),
               ),
             ),
