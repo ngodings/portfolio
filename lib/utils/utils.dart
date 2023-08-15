@@ -1,5 +1,5 @@
 class StaticUtils {
-  static const String hi = 'assets/gifs/stars.gif';
+  static const String hi = 'assets/gifs/cat.gif';
   static const String sparkgif = 'assets/gifs/sparks.gif';
 
   // photos

@@ -28,23 +28,23 @@ class MobileDrawer extends StatelessWidget {
                 child: NavBarLogo(),
               ),
               const Divider(),
-              ListTile(
-                leading: Icon(
-                  Icons.light_mode,
-                  color: AppTheme.c!.primary,
-                ),
-                title: const Text('Dark'),
-                trailing: Switch(
-                  inactiveTrackColor: Colors.grey,
-                  onChanged: (value) {
-                    appProvider
-                        .setTheme(value ? ThemeMode.dark : ThemeMode.light);
-                  },
-                  value: appProvider.isDark,
-                  activeColor: AppTheme.c!.primary,
-                ),
-              ),
-              const Divider(),
+              // ListTile(
+              //   leading: Icon(
+              //     Icons.light_mode,
+              //     color: AppTheme.c!.primary,
+              //   ),
+              //   title: const Text('Dark'),
+              //   trailing: Switch(
+              //     inactiveTrackColor: Colors.grey,
+              //     onChanged: (value) {
+              //       appProvider
+              //           .setTheme(value ? ThemeMode.dark : ThemeMode.light);
+              //     },
+              //     value: appProvider.isDark,
+              //     activeColor: AppTheme.c!.primary,
+              //   ),
+              // ),
+              // const Divider(),
               ...NavBarUtils.names.asMap().entries.map(
                     (e) => Padding(
                       padding: const EdgeInsets.all(8.0),
