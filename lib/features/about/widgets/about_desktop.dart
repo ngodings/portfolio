@@ -2,9 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:portfolio/configs/configs.dart';
 import 'package:portfolio/utils/const.dart';
 import 'package:portfolio/utils/utils.dart';
-import 'package:portfolio/utils/work_utils.dart';
 import 'package:portfolio/widgets/about_me_widget.dart';
-import 'package:portfolio/widgets/community_button.dart';
 import 'package:portfolio/widgets/custom_text_heading.dart';
 import 'package:portfolio/widgets/tech_widget.dart';
 

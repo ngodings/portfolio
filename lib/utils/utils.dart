@@ -31,7 +31,8 @@ class StaticUtils {
     "https://github.com/ngodings/"
   ];
 
-  static const String resume = '';
+  static const String resume =
+      'https://drive.google.com/file/d/1Zn4qobr3FOPOvkbEV_fcl_hwPkoHMsep/view?usp=sharing';
 
   static const String gitHub = 'https://github.com/ngodings';
 }

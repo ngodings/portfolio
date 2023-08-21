@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:portfolio/widgets/about_me_widget.dart';
 
 import 'package:universal_html/html.dart' as html;
-import 'package:portfolio/widgets/community_button.dart';
 import 'package:portfolio/widgets/custom_text_heading.dart';
 
 import '../../../configs/app_dimensions.dart';
@@ -13,7 +12,6 @@ import '../../../configs/ui/space.dart';
 import '../../../utils/about_utils.dart';
 import '../../../utils/const.dart';
 import '../../../utils/utils.dart';
-import '../../../utils/work_utils.dart';
 import '../../../widgets/tech_widget.dart';
 
 class AboutMobile extends StatelessWidget {
