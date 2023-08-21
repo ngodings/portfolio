@@ -105,12 +105,12 @@ class ProjectCardWidget extends HookWidget {
                             ],
                           )
                     : Container(),
-                projectIcon != null
-                    ? Icon(
-                        projectIconData,
-                        color: AppTheme.c!.primary,
-                      )
-                    : Container(),
+                // projectIcon != null
+                //     ? Icon(
+                //         projectIconData,
+                //         color: AppTheme.c!.primary,
+                //       )
+                //     : Container(),
                 (width > 1135 || width < 950)
                     ? SizedBox(
                         height: height * 0.02,
